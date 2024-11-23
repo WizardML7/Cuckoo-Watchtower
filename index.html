@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Cuckoo Watchtower: Malware Forensics Assistant</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Project: Cuckoo Watchtower</strong></li>
+        </ul>
+        <ul>
+            <li><a href="https://wizardml7.github.io/">Home</a></li>
+            <li><a href="#overview">Project Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#usecases">Use Cases</a></li>
+            <li><a href="#limitations">Limitations</a></li>
+            <li><a href="#futurework">Future Work</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <h2>Cuckoo Watchtower: Malware Forensics Assistant</h2>
+
+                <h3 id="overview">Project Overview</h3>
+                <p>
+                    Cuckoo Watchtower (CW) is a tool designed to assist malware forensics investigations by leveraging the power of GPT-4, an advanced LLM by OpenAI. 
+                    It processes large Cuckoo Sandbox JSON reports into accessible, chatbot-style insights via a Retrieval Augmented Generation (RAG) pipeline, all within 
+                    a Google Colab notebook. CW aids analysts by dynamically responding to queries about malware behavior, pivoting investigation paths, and generating tailored reports.
+                </p>
+
+                <h3 id="features">Features</h3>
+                <ul>
+                    <li><strong>Data Integration</strong>: Processes Cuckoo Sandbox JSON outputs into organized text files covering general, network, signature, and static analysis.</li>
+                    <li><strong>Retrieval Augmented Generation (RAG)</strong>: Enhances context understanding for the LLM to generate highly accurate and relevant responses.</li>
+                    <li><strong>Vector Database</strong>: Employs Weaviate to store and retrieve analysis vectors efficiently.</li>
+                    <li><strong>Chatbot Interaction</strong>: Provides dynamic, question-based analysis for streamlined investigations.</li>
+                </ul>
+
+                <h3 id="usecases">Use Cases</h3>
+                <ul>
+                    <li><strong>Comprehensive Reports</strong>: Generates detailed, audience-specific malware analysis reports.</li>
+                    <li><strong>Interactive Queries</strong>: Enables users to ask follow-up questions or clarify malware behaviors.</li>
+                    <li><strong>Pivot Assistance</strong>: Facilitates rapid data retrieval for efficient investigative pivoting.</li>
+                </ul>
+
+                <h3 id="limitations">Limitations</h3>
+                <ul>
+                    <li><strong>Data Size Constraints</strong>: Limited by the JSON file size and OpenAI's API token constraints.</li>
+                    <li><strong>Privacy Concerns</strong>: May require alternative, private LLMs (e.g., LLaMA) for sensitive data processing in operational environments.</li>
+                </ul>
+
+                <h3 id="futurework">Future Work</h3>
+                <ul>
+                    <li>Integrating additional data sources, such as memory snapshots or BSON files.</li>
+                    <li>Adding the ability to run Cuckoo scans directly within the tool for streamlined workflows.</li>
+                </ul>
+
+                <h3 id="technologies">Technologies Used</h3>
+                <ul>
+                    <li><strong>Cuckoo Sandbox</strong>: Malware analysis tool generating JSON reports.</li>
+                    <li><strong>Python</strong>: Primary programming language for text processing and integration.</li>
+                    <li><strong>Weaviate</strong>: Vector database for efficient context storage and retrieval.</li>
+                    <li><strong>Google Colab</strong>: Notebook environment for tool deployment and user interaction.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <small><a href="https://github.com/WizardML7">GitHub Profile</a> • <a href="#">Contact</a></small>
+    </footer>
+</body>
+</html>
